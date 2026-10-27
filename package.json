@@ -7,8 +7,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "server:build": "tsc -p server/tsconfig.json",
-    "server:start": "node dist/server/index.js",
+    "server:start": "node --import tsx server/index.ts",
     "server:dev": "tsx server/index.ts",
     "client:dev": "cd client && npm run dev",
     "client:install": "cd client && npm install"
